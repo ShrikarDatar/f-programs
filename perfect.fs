@@ -1,13 +1,15 @@
 open System
-let mutable n=0
-let mutable count=0
-printfn"Enter range"
-n<-int(Console.ReadLine())
-for i=1 to n do
-    count<-0
-    for j=1 to i do
-       if i%j=0 then
-        count<-count+j
-        if count=i then
-            printfn"%d"i  
-Console.Read()               
+printfn"Enter a numuber: "
+let n=int(Console.ReadLine())
+let mutable sum=0
+let perfect n=
+    for i=1 to n-1 do
+        if n%i=0 then
+            sum<-sum+i
+    if sum=n then
+        printfn"%d is perfect" n
+    else
+        printfn"%d is not perfect"n
+perfect n
+Console.ReadLine() 
+            
