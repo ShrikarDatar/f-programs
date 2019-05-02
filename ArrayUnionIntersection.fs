@@ -22,7 +22,7 @@ let ArrayIntersectionUnion=
             if arr1.[j]=arr2.[i] then
                 printfn"%d" arr1.[j]
 
-    let mutable falg=0
+    let mutable flag=0
     printfn"union is : "
     for j in 0..arr1.Length-1 do
         flag<-0
