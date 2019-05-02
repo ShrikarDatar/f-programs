@@ -15,4 +15,8 @@ printfn""
 printfn"Copy the String"
 let mutable string4=String.Copy(string3)
 printfn"copied string is %s"string3
+
+printfn"printing alternate charchters: "
+for i in 0..2..length-1 do
+    printf "%c" string3.[i]
 Console.ReadLine()
