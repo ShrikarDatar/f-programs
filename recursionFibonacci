@@ -8,3 +8,18 @@ let rec fib n =
 for i=1 to 10 do
  printfn "Fibonacci %d: %d" i (fib i)
 Console.ReadLine()
+//Fibonacci series
+let fibonacci num=
+    let mutable f1=0
+    let mutable f2=1
+    let mutable f3=0
+    printf "%d %d "f1 f2
+    for i=1 to num do
+        f3<-f1+f2
+        printf"%d "f3
+        f1<-f2
+        f2<-f3
+
+printfn"Enter number till you wanna generate fibonacci series  :"
+let n5=int(Console.ReadLine())
+fibonacci n5
