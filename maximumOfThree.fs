@@ -1,10 +1,14 @@
 open System
-let mutable A=3
-let mutable B=5
-let mutable C=10
-if A>=B && A>=C then
-    printfn"%d is greater"A
-elif B>=A && B>=C then
-    printfn"%d is greater" B
-else printfn"%d is gretaer"C
-Console.ReadLine()         
+let mutable a=int(Console.ReadLine())
+let mutable b=int(Console.ReadLine())
+let mutable c=int(Console.ReadLine())
+if a>=b && a>=c then
+     printfn"maximum is %d:" a
+elif b>=a && b>=c then
+    printfn"maximum is %d" b
+else
+    printfn "Maximum is %d"c
+
+
+
+Console.ReadLine()
